@@ -1,0 +1,522 @@
+#notifications
+{
+	border-radius: 5px;
+}
+#top_banner
+{
+	background-color: #22233b;
+	height: 70px;
+	margin-top: 40px;
+}
+.main_body
+{
+	margin: 0;
+	padding: 0;
+	background-color:#F2F4F5  ;
+    background:#F2F4F5  ;
+    -ms-backgroun-color:#F2F4F5;
+    -webkit-backgroun-color:#F2F4F5;
+    -moz-backgroun-color:#F2F4F5;
+    -o-backgroun-color:#F2F4F5;
+}
+/*HEADER STYLE*/
+.main_header
+{
+	padding: 0 100px;
+	width: 100%;
+	height: 60px;
+	box-sizing: border-box;
+	background: #9C0707;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+	transition: 0.5s;
+	font-family: 'Raleway', sans-serif;
+}
+/*ABOUT BACKGROUN */
+#main_about
+{
+   font-family: 'Open Sans', sans-serif;
+   font-size:13px;
+   line-height:25px;
+   background: url(../img/backgr.png) no-repeat 50% 50%;
+   background-attachment: fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background -size: cover;
+   background-size: cover;
+   height:auto;
+}
+
+/*CLASS ADDED FROM JQUERY*/
+nav
+{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 60px;
+	box-sizing: border-box;
+	transition: .5s;
+	margin-top: -3px;
+	z-index: 9999;
+	background: #9C0707;
+}
+.black_nav
+{
+   background: #9C0707;
+   height: 60px;
+   padding: 0px 10px;
+}
+
+.main_header ul
+{
+	position: relative;
+	margin: 0;padding: 0;
+	display: flex;
+	float: right;
+	transition: 0.5s;
+}
+.myactive
+{
+	background: #1280b3;
+	text-decoration-style: none;
+	text-decoration:none;
+	color:white;
+	font-size: 15px;
+	border-radius: 5px;
+	padding: 6px 13px;
+	border:solid 1px white;
+    box-shadow: 0 3px 5px rgba(0,0,0,.2);
+	transition: 1s;
+	margin-left: 3px;
+
+}
+.main_header ul li .myactive:hover
+{
+   border: solid white 1px;
+   border-radius: 5px; 
+   color: black;
+   background-color: #f68e07;
+}
+
+.main_header ul li
+{
+	list-style: none;
+}
+.main_header ul li a
+{
+	position: relative;
+	display: block;
+	padding: 7px 16px;
+	margin: 10px 0px;
+	//text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	transition: 0.5s;
+	margin-left: 2px;
+}
+.main_header ul li a:hover
+{
+	background: rgba(0,0,0,.2);
+	text-decoration-style: none;
+	text-decoration:none;
+	border-radius: 5px;
+	color:white;
+}
+.toggle
+{
+	display: none;
+	position: absolute;
+	right: 10px;
+	top: 15px;
+	background: #000;
+	color: #fff;
+	padding: 5px 10px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+ .dropbtn 
+   {
+    background-color: #F3A509;
+    //background-color:transparent;
+    border: solid 1px #ffffff;
+    color: white;
+    padding: 7px 20px;
+    font-size: 13px;
+    margin-top: -10px;
+    transition:0.5s;
+    border-radius: 7px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+  }
+  .dropbtn:hover
+  {
+  	background-color: #9e1111;
+  	color: #fff;
+  }
+
+  .dropdown 
+  {
+  	margin-top: 18px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    z-index: 9999999999999;
+    margin-left: 5px;
+  }
+
+  .dropdown-content 
+  {
+  	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+    margin-top: 8px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 130px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4), 0 2px 5px 0 rgba(0, 0, 0, 0.14);
+    z-index: 1;
+  }
+
+  .dropdown-content a 
+  {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none !important;
+    text-decoration-style: none !important;
+    display: block;
+    transition:1s;
+    border-bottom: solid 2px #a3a3a3;
+  }
+  .dropdown-content a:hover 
+  {
+    background-color:#82817D;
+    color:#fff;
+    text-decoration: none !important;
+    text-decoration-style: none !important;
+    border-bottom: solid 2px #ee9812;
+  }
+
+  .dropdown:hover .dropdown-content 
+  {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn 
+  {
+    background-color: #F3A509;
+  }
+  .dropdown-content::after
+  {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      right: 70%;
+      margin-left: -10px;
+      border-width: 12px;
+      border-style: solid;
+      border-color:  transparent transparent #f1f1f1 transparent;
+      z-index: 9999;
+  }
+  /*NEWS & REVIEW DROPDOWN*/
+  .logout
+  {
+    background-color:#A7A7A5;
+    color: white;
+  }
+  .myLogin_cont
+  {
+     background-color:#D6D5D0;
+     min-width: 120px;border-radius: 10px;
+  }
+
+
+@media (max-width: 992px)
+{
+	.main_header .toggle
+	{
+		content ="\f130";
+		display: block;
+		text-decoration: none;
+		text-decoration-style: none;
+		transition: 0.5s;
+		background: #2f6299;
+		border-radius: 4px;
+		transition: 0.5s;
+		border:solid 1px white;
+		box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+	}
+	.main_header .toggle:hover
+	{
+       background:#0A3B5A;
+       color: white;
+       text-decoration: none;
+	   text-decoration-style: none;
+	}
+	.main_header
+	{
+		padding: 0 0;
+		background: #B50C0C;
+	}
+	.main_header ul
+	{
+		width: 100%;
+		top: 4px;
+		display: none;
+	}
+	.main_header ul.active
+	{
+		display: block;
+	}
+	.main_header ul li a
+	{
+		margin: 0;
+		display: block;
+		text-align: center;
+		color: #fff;
+		background-color: #234280;
+		border-bottom: solid 1px white;
+		//margin-bottom: 1px;
+		text-decoration: none;
+		text-decoration: none;
+		text-decoration-style: none;
+		transition: 0.5s;
+	}
+	.main_header ul li:hover
+	{
+		background: rgba(0,0,0,.5);
+	}
+	.main_header ul li a:hover
+	{
+       background: rgba(0,0,0,.5);
+        color: white;
+	}
+	.myactive
+	{
+		background-color: red;
+		color: white;
+		transition: 1s;
+	}
+	.dropdown
+	{
+		display: block;
+	}
+ }
+	/*SLIDER CAPTION*/
+	.carousel-caption 
+	{
+	  position: absolute;
+	  right: 45%;
+	  //bottom: 250px;
+	  font-size:40px;
+	  //left: 15%;
+	  z-index: 10;
+	  padding-bottom: 0px;
+	  margin-bottom: 5%;
+	  color: #fff;
+	  text-align: center;
+	}
+	.carousel-caption  h2 
+	{
+		font-size:60px;
+		color: #0BA9F9;
+	}
+
+	.carousel-caption  h2 span 
+	{
+		font-size:60px;
+		color: #fff;
+	}
+	.carousel-caption  p 
+	{
+	  font-size:30px;
+	  margin-top:20px;
+	  color:#fff;
+	}
+	#first_a
+	{
+		background-color: #BD0B3E;
+		border:solid 1px white;
+		font-weight: lighter;
+		transition: .5s;
+		text-decoration: none;
+		text-decoration-style: none;
+		box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.6);
+		color: #fff;
+	}
+	#first_a:hover
+	{
+		background-color: #970B34;
+		color:#EAAB1C  ;
+		border:solid 1px #EAAB1C;*/
+	}
+
+	/*SEARCH FORM*/
+	.search_cars_form
+	{
+		background-color: #0D4DA3;
+		width: 100%;
+		padding-top: 16px;
+		padding-left: 12px;
+		padding-right: 12px;
+		padding-bottom: 3px;
+		border:solid 3px #E88B0B;
+		font-size: 15px;
+		transition: .5s;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4), 0 2px 5px 0 rgba(0, 0, 0, 0.14);
+		border-radius: 6px;
+		position: relative;
+		margin-bottom: 5px;
+		min-width: 250px;
+	}
+	.search_cars_form:after{
+	    content: ' ';
+		width: 0px;
+		height: 0;
+		border-left: solid 20px transparent;
+		border-top: solid 00px transparent;
+		border-right: solid 20px transparent;
+		border-bottom: solid 20px #E88B0B;
+		border-bottom-width: 35px;
+		border-bottom-height:60px;
+		position: absolute;
+		left: 5%;
+		bottom: 100%;
+	}
+	.search_cars_form select
+	{
+		box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.7);
+		margin-bottom: 5px;
+		border-radius: 5px;
+	}
+
+	#mySearch
+	{
+		background-color: #E88B0B;
+		color: white;
+		border-radius: 5px;
+		transition: .5s;
+		box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.7);
+		border:solid 3px white;
+		font-weight: bolder;
+	}
+	#mySearch:hover
+	{
+		background-color: #B56F0F;
+		color: #000;
+	}
+	.sunday_display
+	{
+		color: #0D4DA3;
+		font-family: 'Anton', sans-serif;
+		//text-shadow: 0px 0px 3px rgba(0,0,0,.2);
+	}
+	.sunday_display select 
+	{
+		box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.7);
+		border:solid 2px red;
+		padding-bottom : 20px;
+	}
+
+	/*Thumbnail Style*/
+	.thumbnail
+	{
+		background-color: transparent !important;
+		background:transparent;
+		border:solid 1px transparent !important;
+	}
+
+	/*Cards_car_info*/
+	.carNameModel
+	{
+		font-weight: bold;
+		text-decoration-style: none;
+		text-decoration: none;
+		color: #0D366F  ;
+		font-size: 17px;
+	}
+	.cards_price
+	{
+		font-weight: bold;
+		color: #BF3811  ;
+		font-size: 17px;
+	}
+	.my_cars_cards
+	{
+		margin-bottom: 10px;
+		transition: 0.5s;
+	}
+
+	.my_cars_cards:hover{
+      colo
+	}
+
+	 .my_cars_cards .read_more
+	{
+		background-color:#D6DCE4;
+		transition: .5s;
+		font-weight: bold;
+		font-size: 11px;
+		text-decoration-style: none;
+		text-decoration: none;
+	}
+	.my_cars_cards .read_more:hover
+	{
+      background-color: #B9BDC2;
+	}
+	/*IDEX BANNER*/
+	.home_banner
+	{
+		background-color: #9C0D11  ;
+		margin-bottom: 40px;
+	}
+	.car_display
+	{
+		z-index: 9999;
+		margin-top: -35px;
+		right: 0;
+	}
+	.slider_text
+	{
+		margin-top: 20px;
+		color: white;
+		font-size: 20px;
+		font-family: 'Francois One', sans-serif;
+	}
+	.my_cont_reliable
+	{
+		margin-top: -80px;
+	}
+
+	/*SEARCH BY POPULAR MAKES*/
+	.search_by_popular_makes_div
+	{
+		margin-left: 25px;
+		margin-right: 25px;
+		font-size: 20px;
+	}
+
+	/*SIGN IN FORM STYLE*/
+   /*BRANCHES*/
+   .separator
+   {
+   	margin-top: 10px;
+   }
+   .image_holder img
+   {
+   	 box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.7);
+   	 border:solid 2px white;
+   	 transition: .5s;
+   }
+   .image_holder p
+   {
+   	font-size: 20px;
+   	color: #878787;
+   	font-weight: bolder;
+   }
+
+   /*CONTACT US STYLE*/
+   
+
+
+
